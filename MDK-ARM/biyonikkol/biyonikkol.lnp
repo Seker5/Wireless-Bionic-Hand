@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"biyonikkol\startup_stm32f401xe.o"
+"biyonikkol\main.o"
+"biyonikkol\stm32f4xx_it.o"
+"biyonikkol\stm32f4xx_hal_msp.o"
+"biyonikkol\stm32f4xx_hal_tim.o"
+"biyonikkol\stm32f4xx_hal_tim_ex.o"
+"biyonikkol\stm32f4xx_hal_rcc.o"
+"biyonikkol\stm32f4xx_hal_rcc_ex.o"
+"biyonikkol\stm32f4xx_hal_flash.o"
+"biyonikkol\stm32f4xx_hal_flash_ex.o"
+"biyonikkol\stm32f4xx_hal_flash_ramfunc.o"
+"biyonikkol\stm32f4xx_hal_gpio.o"
+"biyonikkol\stm32f4xx_hal_dma_ex.o"
+"biyonikkol\stm32f4xx_hal_dma.o"
+"biyonikkol\stm32f4xx_hal_pwr.o"
+"biyonikkol\stm32f4xx_hal_pwr_ex.o"
+"biyonikkol\stm32f4xx_hal_cortex.o"
+"biyonikkol\stm32f4xx_hal.o"
+"biyonikkol\stm32f4xx_hal_exti.o"
+"biyonikkol\stm32f4xx_hal_uart.o"
+"biyonikkol\system_stm32f4xx.o"
+--strict --scatter "biyonikkol\biyonikkol.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "biyonikkol.map" -o biyonikkol\biyonikkol.axf
